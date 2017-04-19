@@ -44,8 +44,15 @@ module.exports = options => {
           const css = entries.map(entry => {
               const classes = getClasses(entry.node);
               const atoms = classes.join(' ');
+              const node = entry.node;
               if (classes) {
-                delete entry.node.attrs.class;
+                if (node.attrs.as) {
+                  node.attrs['class'] = node.attrs.as
+                    .replace(/\./g, ' ').trim();
+                  delete node.attrs.as;
+                } else {
+                  delete node.attrs['class'];
+                }
               }
               const selector = getSelector(entry);
               return `${selector} { @include atoms(${atoms}); }`;

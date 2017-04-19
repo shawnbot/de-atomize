@@ -8,16 +8,16 @@ Currently, all it does is remove all class attributes and add a
 with an `atoms()` mixin that gets all of the atomic classes. E.g., given the
 [form example] from [Tachyons], it produces:
 
-```
+```html
 <main>
   <form>
     <fieldset id="sign_up">
       <legend>Sign In</legend>
-      <div as=".field-email">
+      <div class="field-email">
         <label for="email-address">Email</label>
         <input type="email" name="email-address" id="email-address">
       </div>
-      <div as=".field-passwd">
+      <div class="field-passwd">
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
       </div>
@@ -54,7 +54,8 @@ with an `atoms()` mixin that gets all of the atomic classes. E.g., given the
 You'll note that I've added the `as="selector"` attribute to some elements,
 which tells de-atomize to substitute that selector instead of the element name
 at its place in the direct descendent "stack". This is probably not the Right
-Thing to do, but it should give you a sense of where my head is at on this.
+Thing to do; In fact, what I originally considered was accommodating a class
+whitelist or pattern that, when matched, would preserve certain classes.
 
 :v:
 
