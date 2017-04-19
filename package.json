@@ -1,0 +1,17 @@
+{
+  "name": "de-atomize",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-promise": "^2.0.1",
+    "posthtml": "^0.9.2"
+  },
+  "devDependencies": {}
+}
