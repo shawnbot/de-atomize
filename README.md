@@ -57,3 +57,9 @@ at its place in the direct descendent "stack". This is probably not the Right
 Thing to do, but it should give you a sense of where my head is at on this.
 
 :v:
+
+[Tachyons]: http://tachyons.io/
+[atomic]: https://acss.io/
+[form example]: http://tachyons.io/components/forms/sign-up/index.html
+[functional]: https://marcelosomers.com/writing/rationalizing-functional-css/
+[posthtml]: https://github.com/posthtml/posthtml
